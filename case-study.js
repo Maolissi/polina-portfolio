@@ -6,9 +6,7 @@ const cases = {
     brief: 'Create a premium visual direction for a skincare serum, balancing product focus, atmosphere and a clear information hierarchy.',
     approach: 'Use a restrained palette, controlled highlights and editorial composition. This is a speculative portfolio concept; verify ingredient and efficacy claims before commercial use.',
    images: [
-  { src: 'coffee-01.png', title: '01 — Coffee at home' },
-  { src: 'coffee-02.png', title: '02 — From bean to latte' },
-  { src: 'coffee-03.png', title: '03 — Espresso essentials' }
+  { src: 'skincare.webp', title: '01 — Hero visual' }
 ]
   },
   orbit: {
@@ -17,11 +15,11 @@ const cases = {
     subtitle: 'Small appliance · Product infographic · Art direction',
     brief: 'Build a warm, premium product story for a cream espresso machine, making its key features easy to understand at a glance.',
     approach: 'Combine soft natural light, warm neutrals, product close-ups and concise feature callouts. Concept visuals; confirm product specs before commercial publication.',
-    images: [
-      { src: 'Кофейный ритуал дома.png', title: '01 — Coffee at home' },
-      { src: 'Эспрессо дома_ от зерна до латте-1.png', title: '02 — From bean to latte' },
-      { src: 'Эспрессо начинается с основы-2.png', title: '03 — Espresso essentials' }
-    ]
+   images: [
+  { src: 'coffee-01.png', title: '01 — Coffee at home' },
+  { src: 'coffee-02.png', title: '02 — From bean to latte' },
+  { src: 'coffee-03.png', title: '03 — Espresso essentials' }
+]
   },
   editorial: {
     type: 'DESIGN STUDIO / 003',
