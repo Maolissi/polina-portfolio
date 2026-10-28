@@ -1,3 +1,8 @@
+
+/* =========================================
+   CASE STUDY — UNIFIED RESPONSIVE LAYOUT
+   ========================================= */
+
 .case-main {
   width: 100%;
   max-width: 1440px;
@@ -11,6 +16,8 @@
 .case-main *::after {
   box-sizing: border-box;
 }
+
+/* Header */
 
 .case-top {
   display: flex;
@@ -26,15 +33,19 @@
   font-weight: 700;
 }
 
+/* Project introduction */
+
 .case-hero {
-  padding: clamp(42px, 7vw, 88px) 0 36px;
+  width: 100%;
+  padding: clamp(40px, 7vw, 88px) 0 32px;
 }
 
 .case-hero h1 {
+  max-width: 100%;
+  margin: 18px 0;
   font-size: clamp(44px, 8vw, 108px);
   line-height: 0.98;
   overflow-wrap: anywhere;
-  margin: 18px 0;
 }
 
 .case-hero > p:not(.eyebrow) {
@@ -44,29 +55,37 @@
   line-height: 1.7;
 }
 
-/* Unified gallery for every case */
+/* Three-card gallery — same rules for every project */
+
 .case-gallery {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+  gap: 32px;
   width: 100%;
+  max-width: 100%;
   min-width: 0;
-  margin: 20px 0 64px;
+  margin: 24px 0 64px;
 }
 
 .case-gallery-card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  max-width: 100%;
   min-width: 0;
   margin: 0;
+  padding: 0;
 }
 
 .case-gallery-frame {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-width: 0;
+  overflow: hidden;
   background: #f5f1e9;
   border-radius: 4px;
 }
@@ -75,6 +94,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: contain;
   object-position: center;
 }
@@ -83,7 +103,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px 16px;
   padding-top: 12px;
   font-size: 11px;
   line-height: 1.5;
@@ -95,32 +116,37 @@
   font-weight: 700;
 }
 
+/* Project description */
+
 .case-details {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
-  gap: 20px 9%;
+  gap: 24px 9%;
   padding: 55px 0;
   border-top: 1px solid var(--line);
 }
 
 .case-details h2 {
+  margin: 0;
   font-size: clamp(26px, 4vw, 43px);
   letter-spacing: -0.06em;
-  margin: 0;
   overflow-wrap: anywhere;
 }
 
 .case-details > p {
   max-width: 520px;
+  margin: 0;
   color: #6e6a63;
   line-height: 1.9;
-  margin: 0;
   overflow-wrap: anywhere;
 }
+
+/* Navigation */
 
 .case-next {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
   padding: 30px 0;
   border-top: 1px solid var(--line);
@@ -132,20 +158,47 @@
   color: var(--blue);
 }
 
-@media (min-width: 900px) {
+/* Footer */
+
+.case-main .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+/* Tablet and desktop */
+
+@media (min-width: 700px) {
+  .case-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1100px) {
   .case-gallery {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: start;
     gap: 24px;
   }
 }
 
-@media (max-width: 650px) {
+/* Mobile */
+
+@media (max-width: 699px) {
+  .case-top {
+    padding: 18px 0;
+  }
+
   .case-hero {
     padding-top: 42px;
   }
 
   .case-gallery {
+    grid-template-columns: minmax(0, 1fr);
     gap: 28px;
     margin-bottom: 42px;
   }
@@ -165,6 +218,8 @@
   }
 
   .case-main .footer {
+    align-items: flex-start;
+    flex-direction: column;
     padding-left: 0;
     padding-right: 0;
   }
