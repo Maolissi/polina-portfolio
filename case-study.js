@@ -5,9 +5,11 @@ const cases = {
     subtitle: 'Beauty product · Infographic concept · AI-assisted art direction',
     brief: 'Create a premium visual direction for a skincare serum, balancing product focus, atmosphere and a clear information hierarchy.',
     approach: 'Use a restrained palette, controlled highlights and editorial composition. This is a speculative portfolio concept; verify ingredient and efficacy claims before commercial use.',
-    images: [
-      { src: 'skincare.webp', title: '01 — Hero visual' }
-    ]
+   images: [
+  { src: 'coffee-01.png', title: '01 — Coffee at home' },
+  { src: 'coffee-02.png', title: '02 — From bean to latte' },
+  { src: 'coffee-03.png', title: '03 — Espresso essentials' }
+]
   },
   orbit: {
     type: 'DESIGN STUDIO / 002',
