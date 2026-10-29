@@ -62,6 +62,18 @@ const cases = {
     images: [
       { src: 'lingerie-green.webp', title: '01 — Hero visual' }
     ]
+  },
+  scrub: {
+    type: 'DESIGN STUDIO / 007',
+    title: 'BODY<br><em>SCRUB.</em>',
+    subtitle: 'Beauty product · Infographic concept · AI-assisted art direction',
+    brief: 'Create an editorial product series for The Act body scrub, combining warm minimalism, tactile texture and a clear information hierarchy.',
+    approach: 'Warm cream background, black typography with cobalt accents, macro texture shots and consistent product rendering across the series. Concept visuals; verify claims before commercial use.',
+    images: [
+      { src: 'scrub-01.png', title: '01 — Body scrub' },
+      { src: 'scrub-02.png', title: '02 — Deep cleanse' },
+      { src: 'scrub-03.png', title: '03 — Visible results' }
+    ]
   }
 };
 
