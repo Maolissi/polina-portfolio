@@ -89,9 +89,11 @@ c.images.forEach((item) => {
   img.loading = 'lazy';
 
   img.onerror = () => {
-    frame.innerHTML = '<p style="padding:20px;text-align:center;color:#77736c">Image not found: ' +
-      item.src.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') +
-      '</p>';
+    img.remove();
+    const missing = document.createElement('p');
+    missing.className = 'image-missing';
+    missing.textContent = 'Image not uploaded yet: ' + item.src;
+    frame.appendChild(missing);
   };
 
   const caption = document.createElement('figcaption');

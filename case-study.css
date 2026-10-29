@@ -224,3 +224,14 @@
     padding-right: 0;
   }
 }
+
+
+/* Accessible placeholder for an image that has not been uploaded yet */
+.image-missing {
+  margin: 20px;
+  color: #77736c;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
