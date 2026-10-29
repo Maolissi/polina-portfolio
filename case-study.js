@@ -6,7 +6,9 @@ const cases = {
     brief: 'Create a premium visual direction for a skincare serum, balancing product focus, atmosphere and a clear information hierarchy.',
     approach: 'Use a restrained palette, controlled highlights and editorial composition. This is a speculative portfolio concept; verify ingredient and efficacy claims before commercial use.',
    images: [
-  { src: 'skincare.webp', title: '01 — Hero visual' }
+  { src: 'skincare-01.png', title: '01 — Hero visual' },
+  { src: 'skincare-02.png', title: '02 — Active ingredients' },
+  { src: 'skincare-03.png', title: '03 — Visible results' }
 ]
   },
   orbit: {
