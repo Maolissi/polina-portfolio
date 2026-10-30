@@ -30,7 +30,9 @@ const cases = {
     brief: 'Create a cohesive visual series for a burgundy lace lingerie set.',
     approach: 'Pair a cream background with wine-red accents and refined typography.',
     images: [
-      { src: 'lingerie-burgundy.webp', title: '01 — Hero visual' }
+      { src: 'lingerie-01.png', title: '01 — Lace set' },
+      { src: 'lingerie-02.png', title: '02 — Fine details' },
+      { src: 'lingerie-03.png', title: '03 — Sizes 42–54' }
     ]
   },
   pop: {
