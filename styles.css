@@ -61,7 +61,7 @@
 .portrait-orange{position:absolute;z-index:0;right:-2%;top:43%;width:35%;aspect-ratio:1;border-radius:50%;background:var(--orange)}
 .portrait-blue{position:absolute;z-index:0;right:1%;bottom:-3%;width:25%;height:40%;border-radius:50% 50% 0 0;background:var(--blue);transform:rotate(13deg)}
 .portrait-green{position:absolute;z-index:0;right:5%;top:4%;width:16%;aspect-ratio:1;border-radius:50%;background:var(--green)}
-.hero-portrait-photo{position:absolute;z-index:1;left:0;bottom:0;width:88%;height:100%;object-fit:cover;object-position:center bottom;border-radius:46% 46% 0 0;mix-blend-mode:normal}
+.hero-portrait-photo{position:absolute;z-index:1;left:50%;bottom:0;width:auto;height:100%;max-width:100%;object-fit:contain;object-position:center bottom;border-radius:0;transform:translateX(-50%);mix-blend-mode:normal}
 .portrait-lockup{position:absolute;z-index:3;right:0;top:30%;width:25%;display:grid;gap:18px;color:var(--ink);font-family:Manrope,sans-serif}
 .portrait-lockup strong{font-size:clamp(15px,1.6vw,24px);line-height:.95;letter-spacing:-.06em}
 .portrait-lockup span{font-size:8px;line-height:1.45;font-weight:700;letter-spacing:.06em;border-top:1px solid var(--ink);padding-top:12px}
@@ -70,7 +70,7 @@
 @media(max-width:1050px){.hero-art.hero-portrait{height:390px}}
 @media(max-width:760px){
  .hero-art.hero-portrait{height:auto;aspect-ratio:1/1.02;width:100%}
- .hero-portrait-photo{width:88%;height:100%;left:0;object-position:center bottom}
+ .hero-portrait-photo{width:auto;height:100%;max-width:100%;left:50%;object-fit:contain;object-position:center bottom;border-radius:0;transform:translateX(-50%)}
  .portrait-lockup{right:1%;top:28%;width:23%}
  .portrait-lockup strong{font-size:clamp(12px,3vw,18px)}
  .portrait-lockup span{font-size:6px}
