@@ -58,7 +58,7 @@ const cases = {
     brief: 'Create a clean, high-contrast product infographic for a portable oral-care device.',
     approach: 'Use a crisp background and vivid accent colors. Confirm specifications before publication.',
     images: [
-      { src: 'water-flosser.webp', title: '01 — Hero visual' }
+      { src: 'hair-dryer.webp', title: '01 — Hero visual' }
     ]
   },
   motion: {
