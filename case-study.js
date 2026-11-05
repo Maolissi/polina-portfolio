@@ -72,12 +72,16 @@ const cases = {
   },
   motion: {
     type: 'DESIGN STUDIO / 006',
-    title: 'GREEN LACE<br><em>SET.</em>',
-    subtitle: 'Fashion · Product infographic · Editorial series',
-    brief: 'Create a product story for a dark green lace lingerie set.',
-    approach: 'Use muted olive, warm beige and dark green for a premium fashion direction.',
+    title: 'GREEN LACE<br><em>BODYSUIT.</em>',
+    subtitle: 'Fashion · Bodysuit product visuals · Editorial infographic series',
+    brief: 'Create a premium visual story for a sage-green lace bodysuit, combining a product-only hero image with a four-card editorial infographic series.',
+    approach: 'A muted sage and olive palette, warm beige backgrounds, delicate botanical shadows and refined typography create a cohesive fashion direction. The opening visual presents the bodysuit on an invisible mannequin; the following four cards focus on fit, lace texture and construction details. Concept visuals; confirm garment details against the original product before commercial use.',
     images: [
-      { src: 'lingerie-green.webp', title: '01 — Hero visual' }
+      { src: 'Green_lace-cover.png', title: 'Cover — Product presentation' },
+      { src: 'Green_lace-01.png', title: '01 — Green Lace' },
+      { src: 'Green_lace-02.png', title: '02 — Perfect Fit' },
+      { src: 'Green_lace-03.png', title: '03 — The Art of Lace' },
+      { src: 'Green_lace-04.png', title: '04 — Details Matter' }
     ]
   },
   scrub: {
