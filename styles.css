@@ -56,14 +56,21 @@
 
 
 /* Personal hero portrait — original repository photo, face and pose preserved */
-/* Hero portrait framing: show the complete original photo, including sneakers */
-.hero-art.hero-portrait{height:720px;overflow:hidden}
-.hero-portrait-photo{left:0;bottom:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;border-radius:0}
-@media(min-width:1500px){.hero-art.hero-portrait{height:720px}}
-@media(max-width:1050px){.hero-art.hero-portrait{height:620px}}
+.hero-art.hero-portrait{height:500px;min-height:0;overflow:hidden;background:transparent;isolation:isolate}
+.portrait-arch{position:absolute;z-index:0;left:4%;top:12%;width:76%;height:88%;border-radius:48% 48% 0 0;background:var(--pink)}
+.portrait-orange{position:absolute;z-index:0;right:-2%;top:43%;width:35%;aspect-ratio:1;border-radius:50%;background:var(--orange)}
+.portrait-blue{position:absolute;z-index:0;right:1%;bottom:-3%;width:25%;height:40%;border-radius:50% 50% 0 0;background:var(--blue);transform:rotate(13deg)}
+.portrait-green{position:absolute;z-index:0;right:5%;top:4%;width:16%;aspect-ratio:1;border-radius:50%;background:var(--green)}
+.hero-portrait-photo{position:absolute;z-index:1;left:0;bottom:0;width:88%;height:100%;object-fit:cover;object-position:center bottom;border-radius:46% 46% 0 0;mix-blend-mode:normal}
+.portrait-lockup{position:absolute;z-index:3;right:0;top:30%;width:25%;display:grid;gap:18px;color:var(--ink);font-family:Manrope,sans-serif}
+.portrait-lockup strong{font-size:clamp(15px,1.6vw,24px);line-height:.95;letter-spacing:-.06em}
+.portrait-lockup span{font-size:8px;line-height:1.45;font-weight:700;letter-spacing:.06em;border-top:1px solid var(--ink);padding-top:12px}
+.portrait-star{position:absolute;z-index:3;right:8%;bottom:13%;font-size:36px;color:var(--paper)}
+@media(min-width:1500px){.hero-art.hero-portrait{height:540px}}
+@media(max-width:1050px){.hero-art.hero-portrait{height:390px}}
 @media(max-width:760px){
- .hero-art.hero-portrait{height:auto;aspect-ratio:408/1106;width:100%;overflow:hidden}
- .hero-portrait-photo{width:100%;height:100%;object-fit:contain;object-position:center bottom;border-radius:0}
+ .hero-art.hero-portrait{height:auto;aspect-ratio:1/1.02;width:100%}
+ .hero-portrait-photo{width:88%;height:100%;left:0;object-position:center bottom}
  .portrait-lockup{right:1%;top:28%;width:23%}
  .portrait-lockup strong{font-size:clamp(12px,3vw,18px)}
  .portrait-lockup span{font-size:6px}
