@@ -6,3 +6,16 @@
 
 /* Real portfolio artwork */
 .project-image{background:#e9e1d7}.project-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s ease}.project-image:hover .project-photo{transform:scale(1.035)}.project-index{padding:7px 9px;background:rgba(245,241,233,.88);color:#1b1b1b;backdrop-filter:blur(8px)}.prototype-note{max-width:720px;line-height:1.7}
+
+/* Green Lace — preserve the original portrait cover without cropping */
+.project-grid .project-card .project-image.project-motion{
+  display:block;
+  width:100%;
+  height:auto!important;
+  aspect-ratio:4/5!important;
+  align-self:start;
+}
+.project-image.project-motion .project-photo{
+  object-fit:contain;
+  object-position:center;
+}
