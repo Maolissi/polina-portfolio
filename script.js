@@ -9,3 +9,12 @@ document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{
 document.querySelectorAll('[data-filter-link]').forEach(a=>a.addEventListener('click',()=>{const f=a.dataset.filterLink;document.querySelectorAll('.filter').forEach(b=>{b.classList.toggle('active',b.dataset.filter===f)});document.querySelectorAll('.project-card').forEach(card=>card.hidden=card.dataset.category!==f)}));
 const menuToggle=document.getElementById('menuToggle'),sidebar=document.getElementById('sidebar');menuToggle.addEventListener('click',()=>{const open=sidebar.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰'});document.querySelectorAll('.sidebar a').forEach(a=>a.addEventListener('click',()=>{sidebar.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
 document.querySelectorAll('.nav-link').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.nav-link').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));document.getElementById('year').textContent=new Date().getFullYear();let lang='en';try{lang=localStorage.getItem('pv-language')||'en'}catch(e){}setLanguage(lang);
+
+/* Discourage casual copying of portfolio previews (not a security boundary). */
+document.querySelectorAll('.protected-media img').forEach(img=>{img.draggable=false;});
+document.addEventListener('contextmenu',event=>{
+  if(event.target.closest('.protected-media')) event.preventDefault();
+});
+document.addEventListener('dragstart',event=>{
+  if(event.target.closest('.protected-media')) event.preventDefault();
+});
