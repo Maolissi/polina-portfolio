@@ -116,12 +116,13 @@ c.images.forEach((item) => {
   figure.className = 'case-gallery-card';
 
   const frame = document.createElement('div');
-  frame.className = 'case-gallery-frame';
+  frame.className = 'case-gallery-frame protected-media';
 
   const img = document.createElement('img');
   img.src = 'assets/images/' + item.src;
   img.alt = item.title;
   img.loading = 'lazy';
+  img.draggable = false;
 
   img.onerror = () => {
     img.remove();
@@ -141,4 +142,12 @@ c.images.forEach((item) => {
   caption.append(label, number);
   figure.append(frame, caption);
   gallery.appendChild(figure);
+});
+
+/* Discourage casual copying of portfolio previews (not a security boundary). */
+document.addEventListener('contextmenu',event=>{
+  if(event.target.closest('.protected-media')) event.preventDefault();
+});
+document.addEventListener('dragstart',event=>{
+  if(event.target.closest('.protected-media')) event.preventDefault();
 });
