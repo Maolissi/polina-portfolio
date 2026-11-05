@@ -51,14 +51,23 @@ const cases = {
       { src: 'hair-dryer-07.png', title: '07 — Complete Styling Kit' }
     ]
   },
-  clay: {
+  'water-flosser': {
     type: 'DESIGN STUDIO / 005',
     title: 'WATER<br><em>FLOSSER.</em>',
-    subtitle: 'Personal care · Product infographic · Feature hierarchy',
-    brief: 'Create a clean, high-contrast product infographic for a portable oral-care device.',
-    approach: 'Use a crisp background and vivid accent colors. Confirm specifications before publication.',
+    subtitle: 'Personal care · Portable oral irrigator · Product infographic series',
+    brief: 'Create a bold, contemporary product story for a portable water flosser, presenting its attachments, cleaning modes, water tank, charging and key specifications in a clear visual sequence.',
+    approach: 'A vivid cobalt-blue foundation, energetic orange accents and neon-lime details give the series a confident, modern character. The device and its black attachments remain visually consistent across all cards. This is a portfolio concept; technical specifications and product claims should be checked against the final product documentation before commercial use.',
     images: [
-      { src: 'hair-dryer.webp', title: '01 — Hero visual' }
+      { src: 'water-flosser-01.png', title: '01 — 7 Nozzles Included' },
+      { src: 'water-flosser-02.png', title: '02 — 5 Cleaning Modes' },
+      { src: 'water-flosser-03.png', title: '03 — 300 ml Water Tank' },
+      { src: 'water-flosser-04.png', title: '04 — Nasal Irrigation Attachment' },
+      { src: 'water-flosser-05.png', title: '05 — Product Features' },
+      { src: 'water-flosser-06.png', title: '06 — Interchangeable Nozzles' },
+      { src: 'water-flosser-07.png', title: '07 — Everyday Oral Care' },
+      { src: 'water-flosser-08.png', title: '08 — What’s in the Box' },
+      { src: 'water-flosser-09.png', title: '09 — USB-A Charging' },
+      { src: 'water-flosser-10.png', title: '10 — Technical Specifications' }
     ]
   },
   motion: {
