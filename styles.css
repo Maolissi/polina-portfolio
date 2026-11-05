@@ -48,3 +48,8 @@
   z-index:3;
 }
 .protected-media > .image-arrow{z-index:4}
+
+/* Portfolio category filters */
+.filters .filter{cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.filters .filter:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.project-card[hidden]{display:none!important}
