@@ -100,7 +100,7 @@ c.images.forEach((item) => {
   frame.className = 'case-gallery-frame';
 
   const img = document.createElement('img');
-  img.src = 'assets/images/' + item.src;
+  img.src = item.src.includes('/') ? item.src : (['hair-dryer.webp','water-flosser.webp','lingerie-green.webp'].includes(item.src) ? item.src : 'assets/images/' + item.src);
   img.alt = item.title;
   img.loading = 'lazy';
 
@@ -112,14 +112,23 @@ c.images.forEach((item) => {
     frame.appendChild(missing);
   };
 
+  const cardHeader = document.createElement('div');
+  cardHeader.className = 'case-card-header';
+  const progress = document.createElement('span');
+  progress.textContent = String(c.images.indexOf(item) + 1).padStart(2, '0') + ' / ' + String(c.images.length).padStart(2, '0');
+  const rule = document.createElement('span');
+  rule.className = 'case-card-rule';
+  const mark = document.createElement('span');
+  mark.className = 'case-card-mark';
+  mark.textContent = 'PV';
+  cardHeader.append(progress, rule, mark);
+
   const caption = document.createElement('figcaption');
   const label = document.createElement('strong');
   label.textContent = item.title;
-  const number = document.createElement('span');
-  number.textContent = c.type;
+  caption.append(label);
 
   frame.appendChild(img);
-  caption.append(label, number);
-  figure.append(frame, caption);
+  figure.append(cardHeader, frame, caption);
   gallery.appendChild(figure);
 });

@@ -235,3 +235,43 @@
   text-align: center;
   overflow-wrap: anywhere;
 }
+
+
+/* Consistent card identity: number, rule and studio mark */
+.case-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 28px;
+  margin-bottom: 9px;
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+.case-card-rule {
+  display: block;
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.case-card-mark {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  font-size: 8px;
+  letter-spacing: -.04em;
+}
+.case-gallery-frame {
+  aspect-ratio: 4 / 5;
+}
+.case-gallery-card figcaption {
+  justify-content: flex-start;
+  padding-top: 10px;
+}
