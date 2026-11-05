@@ -56,7 +56,7 @@
 
 
 /* Personal hero portrait — original repository photo, face and pose preserved */
-.hero-art.hero-portrait{height:500px;min-height:0;overflow:hidden;background:transparent;isolation:isolate}
+.hero-art.hero-portrait{height:820px;min-height:0;overflow:hidden;background:transparent;isolation:isolate}
 .portrait-arch{position:absolute;z-index:0;left:4%;top:12%;width:76%;height:88%;border-radius:48% 48% 0 0;background:var(--pink);filter:drop-shadow(-4px 0 12px rgba(245,105,174,.22));pointer-events:none}
 .portrait-orange{position:absolute;z-index:0;right:-2%;top:43%;width:35%;aspect-ratio:1;border-radius:50%;background:var(--orange)}
 .portrait-blue{position:absolute;z-index:0;right:1%;bottom:-3%;width:25%;height:40%;border-radius:50% 50% 0 0;background:var(--blue);transform:rotate(13deg)}
@@ -66,7 +66,7 @@
 .portrait-lockup strong{font-size:clamp(15px,1.6vw,24px);line-height:.95;letter-spacing:-.06em}
 .portrait-lockup span{font-size:8px;line-height:1.45;font-weight:700;letter-spacing:.06em;border-top:1px solid var(--ink);padding-top:12px}
 .portrait-star{position:absolute;z-index:3;right:8%;bottom:13%;font-size:36px;color:var(--paper)}
-@media(min-width:1500px){.hero-art.hero-portrait{height:540px}}
+@media(min-width:1500px){.hero-art.hero-portrait{height:820px}}
 @media(max-width:1050px){.hero-art.hero-portrait{height:390px}}
 @media(max-width:760px){
  .hero-art.hero-portrait{height:auto;aspect-ratio:1/1.02;width:100%}
