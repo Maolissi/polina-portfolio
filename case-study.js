@@ -35,14 +35,20 @@ const cases = {
       { src: 'lingerie-03.png', title: '03 — Sizes 42–54' }
     ]
   },
-  pop: {
-    type: 'AI CREATIVE LAB / 004',
-    title: 'HAIR DRYER<br><em>CAMPAIGN.</em>',
-    subtitle: 'Beauty tech · Product visuals · Infographic series',
-    brief: 'Develop a modern rose-pink product campaign.',
-    approach: 'Use glossy product lighting and a blush palette. Verify product specifications before publication.',
+  novair: {
+    type: 'DESIGN STUDIO / 004',
+    title: 'NOVAIR<br><em>AIR STYLER.</em>',
+    subtitle: 'Premium beauty technology · 5-in-1 styling system · Product infographic series',
+    brief: 'Develop a premium product story for the NOVAIR Air Styler, presenting the device, its attachments and styling versatility through a cohesive editorial infographic series.',
+    approach: 'A warm beige visual language, graphite product finishes and champagne-gold details create a premium beauty-tech identity. UNA is the digital model featured in selected lifestyle cards. This is a portfolio concept; product specifications and performance claims should be verified against the final device before commercial use.',
     images: [
-      { src: 'hair-dryer.webp', title: '01 — Hero visual' }
+      { src: 'hair-dryer-01.png', title: '01 — NOVAIR Air Styler' },
+      { src: 'hair-dryer-02.png', title: '02 — Salon Styling at Home' },
+      { src: 'hair-dryer-03.png', title: '03 — 5-in-1 Styling System' },
+      { src: 'hair-dryer-04.png', title: '04 — Coanda Technology' },
+      { src: 'hair-dryer-05.png', title: '05 — Multiple Styling Looks' },
+      { src: 'hair-dryer-06.png', title: '06 — Lightweight & Comfortable' },
+      { src: 'hair-dryer-07.png', title: '07 — Complete Styling Kit' }
     ]
   },
   clay: {
