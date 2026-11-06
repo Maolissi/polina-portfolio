@@ -246,3 +246,25 @@
  .contact-details{gap:24px;flex-direction:column}
  .contact-details a{font-size:16px}
 }
+
+
+/* Hero portrait — softly feather the photo edge into the approved pink glow */
+.hero-portrait-photo{
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 18px, #000 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 18px, #000 100%);
+  mask-composite: intersect;
+}
+@media(max-width:760px){
+  .hero-portrait-photo{
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%),
+      linear-gradient(to bottom, transparent 0, #000 12px, #000 100%);
+    mask-image:
+      linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+  }
+}
