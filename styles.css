@@ -246,3 +246,21 @@
  .contact-details{gap:24px;flex-direction:column}
  .contact-details a{font-size:16px}
 }
+
+
+/* Approved refinement: fade the pink arch glow softly into the page background.
+   Keep the arch/photo contours and all foreground geometry unchanged. */
+.portrait-arch{
+  filter:none;
+}
+.portrait-arch::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:-18px;
+  border-radius:inherit;
+  background:var(--pink);
+  filter:blur(34px);
+  opacity:.48;
+  pointer-events:none;
+}
