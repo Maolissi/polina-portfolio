@@ -215,3 +215,34 @@
   height:15px;
   flex-basis:15px;
 }
+
+
+/* Contact block: restore a clean, aligned layout */
+.contact{padding:78px 5.2% 75px;background:var(--blue);color:#fff}
+.contact-inner{position:relative;width:100%;max-width:1000px;margin:0 auto}
+.contact .eyebrow{color:#d4ddff}
+.contact h2{font-size:clamp(56px,9vw,120px);line-height:.88;margin:0 0 24px}
+.contact h2 em{color:var(--lime)}
+.contact-description{max-width:720px!important;margin:0 0 34px!important;color:#dce3ff;font-size:16px!important;line-height:1.6!important}
+.contact-actions{display:flex;align-items:center;gap:38px;flex-wrap:wrap;margin-bottom:46px}
+.contact-actions .button{min-width:280px;min-height:76px;justify-content:space-between;padding:22px 28px;font-size:15px}
+.contact-email{display:inline-flex;align-items:center;gap:11px;margin:0;color:#fff;font-size:18px;font-weight:800;letter-spacing:0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.55);padding:0 0 8px}
+.contact-email:hover{border-color:#fff}
+.contact-details{display:flex;align-items:flex-start;gap:70px;flex-wrap:wrap;margin:0;padding:0;border:0}
+.contact-details a{display:flex;align-items:center;gap:15px;color:#fff;text-decoration:none;font-size:18px;font-weight:800;letter-spacing:0}
+.contact-details a>span{display:grid;gap:7px}
+.contact-details small{font-size:10px;letter-spacing:.14em;color:#d4ddff;font-weight:800}
+.contact-details a:hover{text-decoration:underline;text-underline-offset:4px}
+.contact-icon{display:block;flex:0 0 22px;width:22px;height:22px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.contact-details .contact-icon{width:22px;height:22px}
+.contact-spark{display:none}
+@media(max-width:760px){
+ .contact{padding:65px 22px}
+ .contact h2{font-size:clamp(56px,14vw,95px)}
+ .contact-description{font-size:14px!important;margin-bottom:26px!important}
+ .contact-actions{align-items:flex-start;flex-direction:column;gap:24px;margin-bottom:34px}
+ .contact-actions .button{min-width:0;width:100%;min-height:64px}
+ .contact-email{font-size:15px}
+ .contact-details{gap:24px;flex-direction:column}
+ .contact-details a{font-size:16px}
+}
