@@ -185,3 +185,33 @@
   }
   .contact-details a{font-size:14px}
 }
+
+
+/* Contact method icons */
+.contact-email{
+  display:inline-flex;
+  align-items:center;
+  gap:11px;
+}
+.contact-icon{
+  display:inline-block;
+  flex:0 0 19px;
+  width:19px;
+  height:19px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.contact-label{
+  display:inline-flex!important;
+  flex-direction:row;
+  align-items:center;
+  gap:8px;
+}
+.contact-label .contact-icon{
+  width:15px;
+  height:15px;
+  flex-basis:15px;
+}
