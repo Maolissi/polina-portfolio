@@ -247,3 +247,20 @@
  .contact-details a{font-size:16px}
 }
 
+
+
+/* Services & pricing — transparent individual estimates, no invented rates */
+.pricing-section{align-items:start}
+.pricing-intro{max-width:440px}
+.pricing-note{max-width:390px;margin:0 0 26px;color:#6e6a63;font-size:13px;line-height:1.85}
+.pricing-cta{display:inline-flex;align-items:center;gap:24px;padding:13px 16px;background:var(--ink);color:var(--paper);font-size:11px;font-weight:700}
+.pricing-cta span:last-child{font-size:16px}
+.pricing-list>div{grid-template-columns:30px minmax(0,1fr) auto;gap:12px}
+.pricing-list h3{font-size:13px;line-height:1.45}
+.pricing-list b{font-size:8px;letter-spacing:.09em;font-weight:700;color:var(--blue);text-align:right;white-space:nowrap}
+@media(max-width:760px){
+ .pricing-section{gap:30px}
+ .pricing-note{font-size:12px}
+ .pricing-list>div{grid-template-columns:25px minmax(0,1fr);gap:8px 10px}
+ .pricing-list b{grid-column:2;text-align:left;font-size:8px}
+}
