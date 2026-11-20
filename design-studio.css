@@ -1,0 +1,58 @@
+/* Design Studio — standalone advertising film collection */
+.studio-main{min-height:100vh}
+.studio-hero{min-height:590px;position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:3%;padding-top:72px;padding-bottom:75px;overflow:hidden}
+.studio-hero-copy{position:relative;z-index:2;max-width:620px}
+.studio-index{margin:24px 0 12px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.14em}
+.studio-hero h1{margin:0;font:800 clamp(66px,9.2vw,132px)/.84 Manrope,sans-serif;letter-spacing:-.09em}
+.studio-hero h1 em,.studio-section-head h2 em,.studio-approach h2 em,.studio-contact h2 em{color:var(--blue);font-style:normal}
+.studio-lead{max-width:420px;margin:25px 0 24px;color:#625f59;font-size:16px;line-height:1.7}
+.studio-hero-art{height:410px;position:relative;display:grid;place-items:center;isolation:isolate;background:#e9e3d9;overflow:hidden}
+.studio-orb{position:absolute;border-radius:50%;filter:blur(.2px)}
+.studio-orb-pink{width:66%;aspect-ratio:1;left:-9%;top:-21%;background:var(--pink)}
+.studio-orb-orange{width:47%;aspect-ratio:1;right:-5%;bottom:-18%;background:var(--orange)}
+.studio-hero-type{position:relative;z-index:1;font:800 clamp(48px,6.3vw,88px)/.84 Manrope,sans-serif;letter-spacing:-.09em;color:var(--ink);transform:rotate(-7deg)}
+.studio-hero-type em{color:var(--blue);font-style:normal}
+.studio-hero-stamp{position:absolute;z-index:2;right:7%;top:9%;padding:13px 16px;background:var(--lime);font-size:9px;line-height:1.25;font-weight:800;letter-spacing:.1em;transform:rotate(7deg)}
+.studio-hero-foot{position:absolute;left:5.2%;right:5.2%;bottom:22px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:8px;font-weight:700;letter-spacing:.12em}
+.studio-films{padding-top:100px;padding-bottom:100px;background:#eee9df}
+.studio-section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:42px}
+.studio-section-head h2,.studio-approach h2{margin:8px 0 0;font:800 clamp(54px,7vw,92px)/.88 Manrope,sans-serif;letter-spacing:-.08em}
+.studio-section-head>p{max-width:360px;margin:0 0 5px;color:#6e6a63;line-height:1.8}
+.film-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.film-card{min-width:0}
+.film-media{position:relative;aspect-ratio:9/16;background:#d9d2c7;overflow:hidden}
+.film-media video{display:block;width:100%;height:100%;object-fit:cover;background:#d9d2c7}
+.film-number,.film-format{position:absolute;top:13px;padding:7px 9px;background:rgba(245,241,233,.9);font-size:8px;font-weight:800;letter-spacing:.1em;pointer-events:none}
+.film-number{left:13px}.film-format{right:13px}
+.film-info{display:flex;justify-content:space-between;gap:12px;padding:17px 0 12px;border-bottom:1px solid var(--line)}
+.film-kicker{margin:0 0 7px;color:var(--muted);font-size:8px;font-weight:800;letter-spacing:.13em}
+.film-info h3{margin:0 0 8px;font:800 clamp(17px,1.7vw,23px)/1.15 Manrope,sans-serif;letter-spacing:-.045em}
+.film-info h3 em{color:var(--blue);font-style:normal}
+.film-info p:last-child{max-width:340px;margin:0;color:#6e6a63;font-size:11px;line-height:1.7}
+.film-arrow{font-size:20px;color:var(--blue)}
+.concept-label{margin:10px 0 0;color:var(--muted);font-size:8px;font-weight:800;letter-spacing:.12em}
+.studio-approach{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;padding-top:100px;padding-bottom:100px}
+.studio-approach>p{max-width:520px;color:#625f59;font-size:15px;line-height:1.9}
+.studio-contact{padding-top:85px;padding-bottom:90px;background:var(--pink)}
+.studio-contact h2{max-width:900px;margin:14px 0 32px;font:800 clamp(45px,7vw,90px)/.92 Manrope,sans-serif;letter-spacing:-.08em}
+.studio-contact h2 em{color:var(--blue);font-style:normal}
+.studio-contact .button{display:inline-flex;min-width:220px;justify-content:space-between}
+@media(max-width:1050px){.studio-hero{min-height:520px}.film-grid{gap:16px}.film-info h3{font-size:17px}}
+@media(max-width:760px){
+ .studio-hero{min-height:0;grid-template-columns:1fr;padding-top:65px;padding-bottom:75px;gap:30px}
+ .studio-hero h1{font-size:clamp(64px,17vw,100px)}
+ .studio-hero-art{height:auto;aspect-ratio:1.1/1}
+ .studio-hero-foot{left:22px;right:22px;bottom:18px;font-size:7px;flex-wrap:wrap}
+ .studio-hero-foot span:nth-child(2){display:none}
+ .studio-films{padding-top:70px;padding-bottom:70px}
+ .studio-section-head{display:block;margin-bottom:28px}
+ .studio-section-head h2,.studio-approach h2{font-size:clamp(52px,14vw,76px)}
+ .studio-section-head>p{margin-top:18px}
+ .film-grid{grid-template-columns:1fr;gap:34px}
+ .film-card{max-width:440px;width:100%;margin:0 auto}
+ .film-info h3{font-size:22px}
+ .studio-approach{grid-template-columns:1fr;gap:18px;padding-top:70px;padding-bottom:70px}
+ .studio-approach>p{font-size:13px}
+ .studio-contact{padding-top:70px;padding-bottom:70px}
+ .studio-contact h2{font-size:clamp(46px,12vw,70px)}
+}
