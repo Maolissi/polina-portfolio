@@ -56,3 +56,6 @@
  .studio-contact{padding-top:70px;padding-bottom:70px}
  .studio-contact h2{font-size:clamp(46px,12vw,70px)}
 }
+/* Fourth film: keep the new case balanced beneath the first row */
+.film-aurelle{grid-column:2}
+@media(max-width:760px){.film-aurelle{grid-column:auto}}
